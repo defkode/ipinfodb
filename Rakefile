@@ -3,8 +3,7 @@ require 'rake/testtask'
 
 Bundler::GemHelper.install_tasks
 
-Rake::TestTask.new(:test) do |test|
-  test.libs << 'lib' << 'test'
-  test.pattern = 'test/**/*_test.rb'
-  test.verbose = true
+Rake::TestTask.new do |test|
+  test.libs << 'test'
+  test.pattern = 'test/*_test.rb'
 end

@@ -2,10 +2,6 @@ require 'helper'
 
 class IpinfodbTest < Test::Unit::TestCase
 
-  # def setup
-  #   Ipinfodb.api_key = nil
-  # end
-
   def test_invalid_api_key
     assert_raise ArgumentError, "INVALID API KEY" do
       Ipinfodb.api_key = "xxx"
