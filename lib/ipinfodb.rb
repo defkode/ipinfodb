@@ -1,0 +1,3 @@
+module Ipinfodb
+  # Your code goes here...
+end
