@@ -1,1 +1,16 @@
+Installation
+============
+
+gem install ipinfodb
+
+Usage
+=====
+
+Ipinfodb.api_key = "your_api_key_here"
+Ipinfodb.lookup("127.0.0.1")
+
+
+Running tests
+=============
+
 IPINFODB_API_KEY=<apikey> rake test
