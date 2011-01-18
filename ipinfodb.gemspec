@@ -1,16 +1,16 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "ipinfodb/version"
+require "ipinfodb"
 
 Gem::Specification.new do |s|
   s.name        = "ipinfodb"
   s.version     = Ipinfodb::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["TODO: Write your name"]
-  s.email       = ["TODO: Write your email address"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.authors     = ["Tomasz Mazur"]
+  s.email       = ["defkode@gmail.com"]
+  s.homepage    = "http://ipinfodb.com"
+  s.summary     = %q{Free IP address geolocation tools}
+  s.description = %q{Free IP address geolocation tools}
 
   s.rubyforge_project = "ipinfodb"
 
@@ -18,4 +18,6 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
+  
+  s.add_dependency('httparty', '~> 0.6')
 end

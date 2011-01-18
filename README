@@ -1,0 +1,1 @@
+IPINFODB_API_KEY=<apikey> rake test
