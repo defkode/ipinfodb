@@ -1,7 +1,6 @@
 require 'httparty'
 
 module Ipinfodb
-  VERSION = '0.0.1'
   
   class << self
     attr_accessor :api_key
