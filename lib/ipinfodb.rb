@@ -1,6 +1,6 @@
 require 'httparty'
 
-class Ipinfodb
+module Ipinfodb
   VERSION = '0.0.1'
   
   class << self
