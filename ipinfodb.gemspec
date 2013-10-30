@@ -6,8 +6,8 @@ Gem::Specification.new do |gem|
   gem.name        = "ipinfodb"
   gem.version     = Ipinfodb::VERSION
   gem.platform    = Gem::Platform::RUBY
-  gem.authors     = ["Tomasz Mazur"]
-  gem.email       = ["defkode@gmail.com"]
+  gem.authors     = ["Tomasz Mazur", "Paweł Gościcki"]
+  gem.email       = ["defkode@gmail.com", "pawel.goscicki@gmail.com"]
   gem.homepage    = "http://ipinfodb.com"
   gem.summary     = %q{Free IP address geolocation tools}
   gem.description = %q{Free IP address geolocation tools}
