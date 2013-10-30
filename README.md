@@ -35,3 +35,5 @@ You will receive the following `Hash` as a response (for successful lookups):
 ```
 IPINFODB_API_KEY=<apikey> rake test
 ```
+
+Copyright © 2011-2013 Tomasz Mazur, released under the MIT license
