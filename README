@@ -3,11 +3,24 @@ Installation
 
 gem install ipinfodb
 
+
 Usage
 =====
 
 Ipinfodb.api_key = "your_api_key_here"
-Ipinfodb.lookup("127.0.0.1")
+Ipinfodb.lookup('153.19.48.1')
+
+You will receive the following `Hash` as a response (for successful lookups):
+
+{
+  "statusCode"    : "OK",
+  "statusMessage" : "",
+  "ipAddress"     : "153.19.48.1",
+  "countryCode"   : "PL",
+  "countryName"   : "POLAND"
+}
+
+
 
 Running tests
 =============
