@@ -1,17 +1,25 @@
-Installation
-============
+# ipinfodb
 
+Ruby gem for IP address geolocation via API calls to [IPInfoDB.com](http://ipinfodb.com/).
+
+
+## Installation
+
+```
 gem install ipinfodb
+```
 
 
-Usage
-=====
+## Usage
 
+```ruby
 Ipinfodb.api_key = "your_api_key_here"
 Ipinfodb.lookup('153.19.48.1')
+```
 
 You will receive the following `Hash` as a response (for successful lookups):
 
+```ruby
 {
   "statusCode"    : "OK",
   "statusMessage" : "",
@@ -19,10 +27,11 @@ You will receive the following `Hash` as a response (for successful lookups):
   "countryCode"   : "PL",
   "countryName"   : "POLAND"
 }
+```
 
 
+## Running tests
 
-Running tests
-=============
-
+```
 IPINFODB_API_KEY=<apikey> rake test
+```
