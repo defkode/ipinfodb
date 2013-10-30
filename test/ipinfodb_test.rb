@@ -30,8 +30,9 @@ class IpinfodbTest < Test::Unit::TestCase
     Ipinfodb.api_key = ENV['IPINFODB_API_KEY']
     response = Ipinfodb.lookup('153.19.48.1')
 
-    assert_equal 'Poland', response["CountryName"]
-    assert_equal 'PL', response["CountryCode"]
+    assert_equal 'OK', response['statusCode']
+    assert_equal 'POLAND', response['countryName']
+    assert_equal 'PL', response['countryCode']
   end
 
 end

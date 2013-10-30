@@ -6,20 +6,21 @@ module Ipinfodb
 
   include HTTParty
 
-  base_uri "api.ipinfodb.com"
+  base_uri 'api.ipinfodb.com'
 
   def self.lookup(ip)
     params = {
-      :output => "json",
+      :format => 'json',
       :key    => api_key,
       :ip     => ip
     }
 
-    body = get("/v2/ip_query_country.php", :query => params).parsed_response
-    if body["Status"] == "OK"
+    body = get('/v3/ip-country/', :query => params).parsed_response
+
+    if body['statusCode'] == 'OK'
       body
     else
-      raise ArgumentError, body["Status"]
+      raise ArgumentError, body['statusMessage']
     end
   end
 
